@@ -1,0 +1,29 @@
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /api/ping                 --> main.main.func1 (5 handlers)
+[GIN-debug] POST   /api/registe              --> main.PostRegister (5 handlers)
+[GIN-debug] GET    /api/stat                 --> main.GetStat (5 handlers)
+[GIN-debug] GET    /api/all                  --> main.GetAll (5 handlers)
+[GIN-debug] GET    /api/delete/all/done      --> main.DeleteAll (5 handlers)
+[GIN-debug] Listening and serving HTTP on 0.0.0.0:8090
+[GIN] 2018/02/02 - 16:01:09 | 404 |      10.546µs |       127.0.0.1 | GET      /api/sign
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /api/ping                 --> main.main.func1 (5 handlers)
+[GIN-debug] GET    /api/wx                   --> main.(*Service).GetWxSign-fm (5 handlers)
+[GIN-debug] POST   /api/registe              --> main.(*Service).PostRegister-fm (5 handlers)
+[GIN-debug] GET    /api/stat                 --> main.(*Service).GetStat-fm (5 handlers)
+[GIN-debug] GET    /api/all                  --> main.(*Service).GetAll-fm (5 handlers)
+[GIN-debug] GET    /api/delete/all/done      --> main.(*Service).DeleteAll-fm (5 handlers)
+[GIN-debug] Listening and serving HTTP on 0.0.0.0:8090
+[GIN] 2018/02/02 - 16:04:21 | 400 |      91.124µs |       127.0.0.1 | GET      /api/wx
+2018/02/02 16:04:30 [ERROR][UNKNOWN] main.go:305: main.JSApiTicket{ErrCode:41001, ErrMsg:"access_token missing hint: [.fPQ40670vr31!]", Ticket:"", ExpiresIn:0}
+[GIN] 2018/02/02 - 16:04:30 | 403 |  113.878736ms |       127.0.0.1 | GET      /api/wx?url=hh
